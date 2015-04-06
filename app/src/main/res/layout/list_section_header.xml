@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/silver"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:id="@+id/profile_round_image"
+            android:src="@drawable/teeter"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="30dip"
+            app:riv_border_width="3dip"
+            app:riv_border_color="@color/white"
+            app:riv_mutate_background="true"
+            app:riv_tile_mode="clamp"
+            app:riv_oval="true"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:id="@+id/seller_name"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="name"
+            android:gravity="center_vertical"/>
+
+
+        <TextView
+            android:id="@+id/number_of_listings"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Number of listings"
+            android:gravity="center_vertical|end"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

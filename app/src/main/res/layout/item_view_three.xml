@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/three_image_1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:riv_corner_radius="10dip"
+        app:riv_border_width="0dip"
+        app:riv_border_color="@color/white"
+        app:riv_mutate_background="true"
+        app:riv_oval="false"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/three_image_1">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/three_image_2"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="0dip"
+            app:riv_border_color="@color/white"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/three_image_3"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="0dip"
+            app:riv_border_color="@color/white"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

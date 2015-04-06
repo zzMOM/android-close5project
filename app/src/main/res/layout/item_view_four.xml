@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/four_image_1"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="0dip"
+            app:riv_border_color="@color/white"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/four_image_2"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="0dip"
+            app:riv_border_color="@color/white"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/four_image_3"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="0dip"
+            app:riv_border_color="@color/white"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:id="@+id/four_image_4"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            app:riv_corner_radius="10dip"
+            app:riv_border_width="0dip"
+            app:riv_border_color="@color/white"
+            app:riv_mutate_background="true"
+            app:riv_oval="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>
