@@ -1,57 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">TeeterPal</string>
+    <string name="app_name">Close5Project</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_welcome">TeeterPal</string>
-    <string name="parse_app_id">ic0DuczZLa2FtkYLgDGa8GfH4TfLiAAW9qB4WZ4d</string>
-    <string name="parse_client_key">ZmW6lTVFT8AlepSainIqe76jPHQZy2I7HS8Mz9TW</string>
-    <string name="google_android_api_key">AIzaSyDaZ5-8aIBdWJKahMevBClx0Pyx5PZNoPI</string>
-    <string name="facebook_app_id">1556640477946963</string>
-    <string name="title_activity_parse_signup">ParseSignup</string>
-    <string name="title_activity_teeter_main_map">TeeterPal</string>
-    <string name="alert_dialog_ok">DONE</string>
-    <string name="alert_dialog_cancel">CANCEL</string>
-    <string name="title_activity_teeter_pal_main">TeeterPal</string>
-    <string name="title_activity_teeter_pal_event">TeeterPal</string>
-    <string name="drawer_open">open</string>
-    <string name="drawer_close">close</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_create_new_event">CreateNewEvent</string>
-    <string name="action_search">Search</string>
-    <string name="action_map">Map</string>
-    <string name="action_favorite_location">FavoriteLocation</string>
-    <string name="title_activity_confirm_event_address">ConfirmEventAddress</string>
-    <string name="title_activity_main_activity2">MainActivity2</string>
-    <string name="title_activity_teeter_signin_signup">TeeterSignInSignUp</string>
-    <string name="title_facebook_login">FacebookLogin</string>
-    <string name="teeter_signin_dispatch_user_signed_in">"User signed in, starting: "</string>
-    <string name="teeter_signin_dispatch_user_not_signed_in">User not signed in, starting TeeterLoginActivity</string>
-    <string name="teeter_signin_warning_teeter_signin_failed">"Teeter username/password sign in failed, exception: "</string>
-    <string name="teeter_signin_warning_username_missing">Please enter username</string>
-    <string name="teeter_signin_warning_password_missing">Please enter password</string>
-    <string name="teeter_signin_invalid_credentials_toast">The username and password you entered don\'t match</string>
-    <string name="teeter_signin_failed_unknown_toast">Could not log in, please try again later</string>
-"    <string name="teeter.signup_field_missing">"Please enter "</string>
-    <string name="teeter_signup_password_too_short">Password should be at least 6 characters</string>
-    <string name="teeter_signup_username_taken">Username is already taken, please choose a different one</string>
-    <string name="teeter_signup_reenter_password">Please re-enter your password</string>
-    <string name="teeter_signup_mismatch_confirm_password">Passwords don\'t match, please try again</string>
-    <string name="teeter_signup_no_email">Please enter your email</string>
-    <string name="teeter_signup_invalid_email">Email is invalid, please correct it and try again</string>
-    <string name="teeter_signup_email_taken">Email is already taken, please reset your password instead</string>
-    <string name="teeter_signup_phone_number_invalid">Phone number is invalid, please correct it and try again</string>
-    <string name="teeter_signup_sms_sent_failed">SMS failed, please check your phone number and try again</string>
-    <string name="teeter_signup_verification_code_not_match">Verification code entered not match</string>
-    <string name="teeter_signup_verification_code_not_found">Verification code error, please click verify to send code again</string>
-    <string name="teeter_signup_failed_unknown">Could not sign up, please try again later</string>
-    <string name="teeter_signup_warning_parse_signup_failed">"Teeter signup failed, exception: "</string>
-    <string name="teeter_signup_warning_password_reset_failed">"Teeter password reset failed, exception: "</string>
-    <string name="teeter_signup_warning_password_reset_user_not_found">Username not found</string>
-    <string name="teeter_progress_dialog_text">Loading...</string>
-    <string name="teeter_facebook_login_failed_toast">Facebook login failed</string>
-    <string name="teeter_login_warning_facebook_login_failed">"Facebook login failed, exception: "</string>
-    <string name="title_activity_single_event">SingleEventActivity</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_discover">DiscoverActivity</string>
 
 </resources>

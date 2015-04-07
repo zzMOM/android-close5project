@@ -16,6 +16,7 @@ public class ItemObject {
         this.itemId = itemId;
     }
 
+
     public String getSellerId() {
         return sellerId;
     }

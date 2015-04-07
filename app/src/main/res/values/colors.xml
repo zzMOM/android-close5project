@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="teeter_theme_blue">#77D0DE</color>
-    <color name="teeter_theme_red">#FE7372</color>
-    <color name="divider_color">#C0C0C0</color>
-    <color name="dialog_background">#80FFFFFF</color>
-    <color name="dialog_list_highlight">#800000FF</color>
     <color name="white">#FFFFFF</color>
-    <color name="gray">#808080</color>
-    <color name="event_button_press">#C0C0C0</color>
-    <color name="event_button_focus">#C0C0C0</color>
-    <color name="event_button_normal">#E5E4E2</color>
-    <color name="orange">#FFA500</color>
-    <color name="black">#000000</color>
-    <color name="light_gray">#C0C0C0</color>
-    <color name="red">#FF0000</color>
-    <color name="gray_background">#CCCCCC</color>
-    <color name="transparent">#00000000</color>
+    <color name="silver">#C0C0C0</color>
 
 </resources>
