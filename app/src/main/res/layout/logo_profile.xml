@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/profile_linear_layout">
+
+    <com.makeramen.RoundedImageView
+        android:id="@+id/profile_rounded_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/teeter"
+        app:riv_corner_radius="50dp"
+        app:riv_border_width="5dip"
+        app:riv_border_color="@color/light_gray"
+        app:riv_mutate_background="true"
+        app:riv_oval="true"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/profile_text_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="profile"
+        android:textSize="18sp"/>
+
+</LinearLayout>

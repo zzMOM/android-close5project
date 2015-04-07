@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/my_event_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/photo1"/>
+
+        <com.makeramen.RoundedImageView
+            android:id="@+id/profile_rounded_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/teeter"
+            app:riv_corner_radius="50dp"
+            app:riv_border_width="1dip"
+            app:riv_oval="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="160dp" />
+
+        <LinearLayout
+            android:id="@+id/profile_description_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_rounded_image_view"
+            android:layout_below="@id/my_event_cover_image"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_description_zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="Zipcode: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/profile_description_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="Ages: "
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/profile_description_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:text="Others: "
+                android:textSize="20sp"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/profile_text_below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_rounded_image_view"
+            android:layout_toLeftOf="@id/profile_description_ll"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:text="profile"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#90909090"/>
+
+    <ImageView
+        android:id="@+id/add_my_event_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add"
+        android:padding="5dp"/>
+
+
+</LinearLayout>

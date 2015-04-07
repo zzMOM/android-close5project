@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/place_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_place_black_36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        style="?android:attr/dropDownItemStyle"
+        android:singleLine="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:id="@+id/autocomplete_item_text1"
+        android:layout_toRightOf="@id/place_icon"/>
+
+    <!-- android:layout_height="?android:attr/listPreferredItemHeight" -->
+    <TextView
+        style="?android:attr/dropDownItemStyle"
+        android:singleLine="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:textColor="@color/gray"
+        android:textSize="15sp"
+        android:id="@+id/autocomplete_item_text2"
+        android:layout_toRightOf="@id/place_icon"
+        android:layout_below="@id/autocomplete_item_text1"/>
+
+</RelativeLayout>

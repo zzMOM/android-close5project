@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_list_item">
+        <item name="now">now</item>
+        <item name="min10">in 10 min</item>
+        <item name="min30">in 30 min</item>
+        <item name="hr1">in 1 hr</item>
+        <item name="hr2">in 2 hrs</item>
+        <item name="hr5">in 5 hrs</item>
+    </string-array>
+
+    <string-array name="drawer_array">
+        <item name="profile">PROFILE</item>
+        <item name="setting">SETTING</item>
+        <item name="add_friends">ADD FRIENDS</item>
+        <item name="friends">FRIENDS</item>
+        <item name="notification">NOTIFICATION</item>
+    </string-array>
+
+    <string-array name="event_category_array">
+        <item name="default">default</item>
+        <item name="sport">Sport</item>
+        <item name="music">Music</item>
+        <item name="art">Art</item>
+        <item name="outdoor">Outdoor</item>
+        <item name="museum">Museum</item>
+        <item name="education">Education</item>
+    </string-array>
+
+    <string-array name="event_age_array">
+        <item name="all_ages">All ages</item>
+        <item name="year2">0~2 year</item>
+        <item name="year5">3~5 year</item>
+        <item name="year10">5~10 year</item>
+        <item name="year15">10~15 year</item>
+        <item name="year18">10~18 year</item>
+        <item name="year18up">18 year up</item>
+    </string-array>
+
+    <string-array name="event_visibility_array">
+        <item name="public">Public</item>
+        <item name="friends">friends</item>
+        <item name="private">private</item>
+    </string-array>
+
+    <string-array name="custom_time_picker_hour">
+        <item name="space">""</item>
+        <item name="01">01</item>
+        <item name="02">02</item>
+        <item name="03">03</item>
+        <item name="04">04</item>
+        <item name="05">05</item>
+        <item name="06">06</item>
+        <item name="07">07</item>
+        <item name="08">08</item>
+        <item name="09">09</item>
+        <item name="10">10</item>
+        <item name="11">11</item>
+        <item name="12">12</item>
+    </string-array>
+
+    <string-array name="custom_time_picker_minute">
+        <item name="space">""</item>
+        <item name="00">00</item>
+        <item name="05">05</item>
+        <item name="10">10</item>
+        <item name="15">15</item>
+        <item name="20">20</item>
+        <item name="25">25</item>
+        <item name="30">30</item>
+        <item name="35">35</item>
+        <item name="40">40</item>
+        <item name="45">45</item>
+        <item name="50">50</item>
+        <item name="55">55</item>
+    </string-array>
+
+    <string-array name="custom_time_picker_am_pm">
+        <item name="space">""</item>
+        <item name="am">AM</item>
+        <item name="pm">PM</item>
+    </string-array>
+
+</resources>

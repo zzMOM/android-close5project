@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.teeterpal.androidteeterpal.login.ThirdPartySignInFragment"
+    android:background="@color/teeter_theme_blue"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/logo_teeter"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/third_party_error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/red"
+            android:textSize="18sp"/>
+
+        <com.facebook.widget.LoginButton
+            android:id="@+id/facebook_login_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/weibo_login"
+            android:layout_below="@id/facebook_login_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:text="Weibo Login"/>
+
+        <Button
+            android:id="@+id/teeter_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:layout_below="@id/weibo_login"
+            android:layout_alignLeft="@id/weibo_login"
+            android:layout_alignStart="@id/weibo_login"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/teeter_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:layout_below="@id/weibo_login"
+            android:layout_alignRight="@id/weibo_login"
+            android:layout_alignEnd="@id/weibo_login"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_favorite_location"
+        android:title="@string/action_favorite_location"
+        android:icon="@drawable/ic_star_grey600_36dp"
+        app:showAsAction="always"/>
+
+</menu>

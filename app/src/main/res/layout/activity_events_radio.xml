@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.teeterpal.teeter.EventsActivity_radio">
+
+    <RadioGroup
+        android:id="@+id/event_button_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp">
+
+        <RadioButton
+            android:id="@+id/my_event_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:drawableTop="@drawable/ic_apps_black_36dp"
+            android:background="@drawable/event_button_selector"
+            android:button="@null"
+            android:text="My Event"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            style="?android:borderlessButtonStyle"/>
+
+        <RadioButton
+            android:id="@+id/discover_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:drawableTop="@drawable/ic_public_black_24dp"
+            android:background="@drawable/event_button_selector"
+            android:button="@null"
+            android:text="Discover"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            style="?android:borderlessButtonStyle"/>
+
+        <!--RadioButton
+            android:id="@+id/friends_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:drawableTop="@drawable/ic_people_black_36dp"
+            android:background="@drawable/event_button_selector"
+            android:button="@null"
+            android:text="Friends"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            style="?android:borderlessButtonStyle"/-->
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/event_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/event_button_radio_group" />
+
+</RelativeLayout>

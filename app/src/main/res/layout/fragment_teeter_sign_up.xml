@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.teeterpal.androidteeterpal.login.TeeterSignUpFragment"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/sign_up_error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/red"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/sign_up_user_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:selectAllOnFocus="true"
+        android:hint="Username: "/>
+
+    <EditText
+        android:id="@+id/sign_up_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email: "
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dip"
+        android:selectAllOnFocus="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:selectAllOnFocus="true">
+
+        <EditText
+            android:id="@+id/sign_up_phone_edit_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:selectAllOnFocus="true"
+            android:hint="Phone: "
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/sign_up_verify_phone_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:selectAllOnFocus="true"
+            android:text="Verify"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/sign_up_phone_verification_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:inputType="number"
+        android:hint="Verification Code: "/>
+
+    <EditText
+        android:id="@+id/sign_up_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:selectAllOnFocus="true"
+        android:inputType="textPassword"
+        android:hint="Password: "/>
+
+    <EditText
+        android:id="@+id/sign_up_reenter_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:selectAllOnFocus="true"
+        android:inputType="textPassword"
+        android:hint="Re-enter password: "/>
+
+    <Button
+        android:id="@+id/teeter_sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Sign Up"
+        android:textSize="22sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/button_bg_blue"/>
+
+
+
+</LinearLayout>

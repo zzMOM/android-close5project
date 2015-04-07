@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <Spinner
+        android:id="@+id/time_picker_start_hour"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:entries="@array/custom_time_picker_hour"/>
+
+    <Spinner
+        android:id="@+id/time_picker_start_minute"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:entries="@array/custom_time_picker_minute"/>
+
+    <Spinner
+        android:id="@+id/time_picker_start_am_pm"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:entries="@array/custom_time_picker_am_pm"/>
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="--"/>
+
+    <Spinner
+        android:id="@+id/time_picker_end_hour"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:entries="@array/custom_time_picker_hour"/>
+
+    <Spinner
+        android:id="@+id/time_picker_end_minute"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:entries="@array/custom_time_picker_minute"/>
+
+    <Spinner
+        android:id="@+id/time_picker_end_am_pm"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:entries="@array/custom_time_picker_am_pm"/>
+
+</LinearLayout>

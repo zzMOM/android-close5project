@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.teeterpal.androidteeterpal.TeeterMainMap">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment" />
+
+    <include
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        layout="@layout/map_search_bar"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/checkinLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/set_time_button"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="CHECK IN"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg_blue"/>
+
+        <ImageButton
+            android:id="@+id/discover_button"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/eventicon"
+            android:background="@drawable/button_bg_blue"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+</RelativeLayout>
