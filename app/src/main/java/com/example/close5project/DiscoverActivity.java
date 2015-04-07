@@ -2,10 +2,12 @@ package com.example.close5project;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AbsListView;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 
@@ -20,11 +22,12 @@ import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import java.util.List;
 
 
-public class DiscoverActivity extends ActionBarActivity implements FetchData.FetchDataListener{
+public class DiscoverActivity extends ActionBarActivity {
     private Close5SQLiteHelper dbHelper;
     private List<SellerObject> sellerObjectList;
     private ExpandableListView listView;
     private ExpandableListAdapter adapter;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,32 @@ public class DiscoverActivity extends ActionBarActivity implements FetchData.Fet
         Log.e("seller list size", sellerObjectList.size() + "");
         adapter = new CustomExpandableListAdapter(this, sellerObjectList);
         listView.setAdapter(adapter);
+
+        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swipeRefreshLayout.setRefreshing(true);
+                FetchData fetchData = new FetchData(getApplicationContext(), fetchDataListener);
+                fetchData.execute();
+
+            }
+        });
+
+        listView.setOnScrollListener(new AbsListView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(AbsListView view, int scrollState) {
+
+            }
+
+            @Override
+            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+                if (firstVisibleItem == 0)
+                    swipeRefreshLayout.setEnabled(true);
+                else
+                    swipeRefreshLayout.setEnabled(false);
+            }
+        });
 
 
     }
@@ -61,11 +90,11 @@ public class DiscoverActivity extends ActionBarActivity implements FetchData.Fet
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_refresh) {
+        /*if (id == R.id.action_refresh) {
             FetchData fetchData = new FetchData(getBaseContext(), this);
             fetchData.execute();
             return true;
-        }
+        }*/
 
         return super.onOptionsItemSelected(item);
     }
@@ -87,10 +116,15 @@ public class DiscoverActivity extends ActionBarActivity implements FetchData.Fet
         ImageLoader.getInstance().init(config);
     }
 
-    @Override
-    public void onFinishFetchData() {
-        sellerObjectList = dbHelper.getSellerList();
-        adapter = new CustomExpandableListAdapter(this, sellerObjectList);
-        listView.setAdapter(adapter);
-    }
+
+
+    FetchData.FetchDataListener fetchDataListener = new FetchData.FetchDataListener() {
+        @Override
+        public void onFinishFetchData() {
+            sellerObjectList = dbHelper.getSellerList();
+            adapter = new CustomExpandableListAdapter(getApplicationContext(), sellerObjectList);
+            listView.setAdapter(adapter);
+            swipeRefreshLayout.setRefreshing(false);
+        }
+    };
 }
